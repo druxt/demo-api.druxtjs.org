@@ -11,17 +11,22 @@ tasks:
 
   post-rollout:
     - run:
-        name: drush cim
-        command: drush -y cim
+        name: drush si
+        command: drush -y si demo_umami
         service: cli
-    - run:
-        name: drush updb
-        command: drush -y updb
-        service: cli
-    - run:
-        name: drush cr
-        command: drush -y cr
-        service: cli
+
+    # - run:
+    #     name: drush cim
+    #     command: drush -y cim
+    #     service: cli
+    # - run:
+    #     name: drush updb
+    #     command: drush -y updb
+    #     service: cli
+    # - run:
+    #     name: drush cr
+    #     command: drush -y cr
+    #     service: cli
 
 
 
