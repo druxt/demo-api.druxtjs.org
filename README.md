@@ -37,6 +37,8 @@ This codebase is derived from the [amazeeio/drupal-example-simple](https://githu
 * If any steps fail, you're safe to rerun from any point.
 Starting again from the beginning will just reconfirm the changes.
 
+Now jump to the section below about Druxt setup.
+
 ## Local environment setup - Lando
 
 This repository is set up with a `.lando.yml` file, which allows you to use Lando instead of pygmy for your local development environment.
@@ -64,3 +66,32 @@ lando drush si -y
 ```
 
 6. And now we have a fully working local Drupal site on Lando! For more information on how to deploy your site, check out our documentation or our deployment demo.
+
+## Druxt setup
+
+1. Install Drupal using the demo_umami profile.
+
+```bash
+docker-compose exec cli drush si demo_umami -y
+```
+
+2. Enable Drupal module/s required by DruxtJS.
+
+ ```bash
+docker-compose exec cli drush en druxt jsonapi_views -y
+```
+This should also enable the jsonapi_menu_items module.
+
+3. Log into the site by generating a one time login link.
+
+ ```bash
+docker-compose exec cli drush uli
+```
+
+4. Configure druxt required permission.
+
+Navigate to the following path once logged in `/en/admin/people/permissions`
+
+* Enable `Access Druxt JSON API resources.` permission for the Anonymous user.
+* Scroll to the bottom of the page and click `Save permissions`
+* Now your [demo.druxtjs.org] (https://github.com/druxt/demo.druxtjs.org) frontend will be able to connect and work as expected, be sure to update the .env file with the BASE_URL for the backend you have just built.
