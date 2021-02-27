@@ -65,6 +65,10 @@
                 "web-root": "web/"
             }
         },
-        "patches": {}
+        "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/2936644#comment-14012044": "https://www.drupal.org/files/issues/2021-02-26/2936644-20.patch"
+            }
+        }
     }
 }
