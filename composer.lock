@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c43ea2bdd7825f12603eaf7ab507e423",
+    "content-hash": "f0c11711416c74e26e962507fd42553c",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1839,7 +1839,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.1.7",
+            "version": "9.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1874,7 +1874,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.1.7"
+                "source": "https://github.com/drupal/core-project-message/tree/9.2.7"
             },
             "time": "2020-09-14T13:40:36+00:00"
         },
