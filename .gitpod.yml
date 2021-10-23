@@ -9,6 +9,8 @@ tasks:
       .gitpod/scripts/drupal-setup.sh
     command: |
       .gitpod/scripts/ddev-setup.sh
+      clear && cat .gitpod/WELCOME.md
+      ddev drush uli
 
 # VScode xdebug extension
 vscode:
