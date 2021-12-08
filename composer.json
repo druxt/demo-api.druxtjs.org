@@ -78,6 +78,10 @@
                 "web-root": "web/"
             }
         },
-        "patches": {}
+        "patches": {
+            "drupal/core": {
+                "#57: Add more content for views pagination": "patches/57-more_recipes.patch"
+            }
+        }
     }
 }
