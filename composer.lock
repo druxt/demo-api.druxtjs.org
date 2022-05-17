@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2068915db1c3628785b92b5a1fe291a6",
+    "content-hash": "3ac6c84c31fc7a355ed309aa809e8d48",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -11721,9 +11721,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/gin_toolbar": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
