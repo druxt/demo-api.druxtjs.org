@@ -1,3 +1,7 @@
+# !Important!
+
+This repository has been merged into the Umami demo mono-repo @ https://github.com/druxt/umami.demo.druxtjs.org/tree/develop/drupal
+
 # DruxtJS Umami demo - Drupal JSON:API backend.
 
 This is the Drupal 9 codebase for the JSON:API backend used by the DruxtJS Umami demonstration site.
